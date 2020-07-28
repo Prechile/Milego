@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F2F2"
+        android:id="@+id/acceuil"
+        tools:context=".MainActivity"
+        tools:showIn="@layout/activity_main"
+        >
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:layout_width="400dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/milego"
+                android:layout_gravity="center|top"
+                android:gravity="center|top"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:background="#F0F0F0"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/lin">
+
+            <ViewFlipper
+                    android:id="@+id/v_flipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp" />
+
+            <TextView
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titre0"
+                    android:layout_gravity="center|top"
+                    android:gravity="center|top"
+                    android:text="Prix de quelques danrées alimentaire au togo"
+                    android:textSize="16sp"
+                    />
+
+
+            <androidx.gridlayout.widget.GridLayout
+                    app:columnCount="2"
+                    app:columnOrderPreserved="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_columnWeight="1"
+                        android:id="@+id/card"
+                        app:layout_rowWeight="1"
+                        app:cardElevation="6dp"
+                        app:cardBackgroundColor="#EBC262"
+                        android:layout_margin="12dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="1dp">
+
+                        <ImageView
+                                android:id="@+id/bounce"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="4"
+                                android:src="@drawable/mais" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:textColor="#FFFF"
+                                android:text="Mais - 500 FCFA"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        app:cardElevation="6dp"
+                        app:cardBackgroundColor="#9D8A63"
+                        android:layout_margin="12dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:padding="1dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                        <ImageView
+                                android:id="@+id/collecte"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/mil" />
+
+                        <TextView
+                                android:layout_marginTop="12dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#FFFF"
+                                android:text="Mil - 450 FCFA"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        app:cardElevation="6dp"
+                        app:cardBackgroundColor="#AB7D35"
+                        android:layout_margin="12dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:padding="1dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                        <ImageView
+                                android:id="@+id/soj"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/soja" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:textColor="#FFFF"
+                                android:text="Soja - 650 FCFA"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        app:cardElevation="6dp"
+                        app:cardBackgroundColor="#CD270A"
+                        android:layout_margin="12dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:padding="1dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                        <ImageView
+                                android:id="@+id/zone"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/tomate" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:textColor="#FFFF"
+                                android:text="tomates - 525 FCFA"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </androidx.gridlayout.widget.GridLayout>
+
+            <Button
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button"
+                    android:text="voir+"
+                    android:background="@drawable/btn_con"
+                    android:textColor="#FFFF"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+            <TextView
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titre"
+                    android:layout_gravity="center|top"
+                    android:gravity="center|top"
+                    android:text="Listes des grands marchés de lomé animés cette semaine"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    />
+
+            <androidx.gridlayout.widget.GridLayout
+                    app:columnOrderPreserved="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_columnWeight="1"
+                        android:id="@+id/card1"
+                        app:layout_rowWeight="1"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="12dp"
+                        android:layout_margin="12dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="1dp"
+                            app:layout_column="0"
+                            app:layout_row="0">
+
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|top"
+                                android:text="Assigamé"
+                                android:textSize="20sp"
+                                android:textStyle="italic" />
+
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="10dp"
+                                android:text="Jour du marché: " />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center|top"
+                                android:text="SAMEDI "
+                                android:textColor="#1086BF" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="10dp"
+                                android:text="Heures d'activité: " />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center|top"
+                                android:text="De 08h 00 à 18h 00"
+                                android:textColor="#1086BF" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <androidx.gridlayout.widget.GridLayout
+                    app:columnOrderPreserved="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_columnWeight="1"
+                        android:id="@+id/card2"
+                        app:layout_rowWeight="1"
+                        app:cardElevation="6dp"
+                        app:cardCornerRadius="12dp"
+                        android:layout_margin="12dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:padding="1dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Hédzranawoé"
+                                android:gravity="center|top"
+                                android:textStyle="italic"
+                                android:textSize="20sp"
+                                />
+
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jour du marché: "
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="10dp"
+                                />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="LUNDI - JEUDI "
+                                android:layout_gravity="center"
+                                android:textColor="#1086BF"
+                                android:gravity="center|top"
+                                />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Heures d'activité: "
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="10dp"
+                                />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="De 08h 00 à 18h 00"
+                                android:layout_gravity="center"
+                                android:textColor="#1086BF"
+                                android:gravity="center|top"
+                                />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <androidx.gridlayout.widget.GridLayout
+                    app:columnOrderPreserved="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_columnWeight="1"
+                        android:id="@+id/card3"
+                        app:layout_rowWeight="1"
+                        app:cardElevation="6dp"
+                        app:cardCornerRadius="12dp"
+                        android:layout_margin="12dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:padding="1dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Agoé Assiyéyé"
+                                android:gravity="center|top"
+                                android:textStyle="italic"
+                                android:textSize="20sp"
+                                />
+
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jour du marché: "
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="10dp"
+                                />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dimanche - LUNDI "
+                                android:layout_gravity="center"
+                                android:textColor="#1086BF"
+                                android:gravity="center|top"
+                                />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Heures d'activité: "
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="10dp"
+                                />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="De 08h 00 à 18h 00"
+                                android:layout_gravity="center"
+                                android:textColor="#1086BF"
+                                android:gravity="center|top"
+                                />
+
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <androidx.gridlayout.widget.GridLayout
+                    app:columnOrderPreserved="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_columnWeight="1"
+                        android:id="@+id/card4"
+                        app:layout_rowWeight="1"
+                        app:cardElevation="6dp"
+                        app:cardCornerRadius="12dp"
+                        android:layout_margin="12dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:padding="1dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Cacaveli"
+                                android:gravity="center|top"
+                                android:textStyle="italic"
+                                android:textSize="20sp"
+                                />
+
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jour du marché: "
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="10dp"
+                                />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mercredi - mardi "
+                                android:layout_gravity="center"
+                                android:textColor="#1086BF"
+                                android:gravity="center|top"
+                                />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Heures d'activité: "
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="10dp"
+                                />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="De 08h 00 à 18h 00"
+                                android:layout_gravity="center"
+                                android:textColor="#1086BF"
+                                android:gravity="center|top"
+                                />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.gridlayout.widget.GridLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

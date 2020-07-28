@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Milego</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Milego</string>
+    <string name="nav_header_subtitle">Mener à bien vos opération</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Autres</string>
+
+    <string name="menu_home">Acceuil</string>
+    <string name="menu_tools">Simulation d\'achat</string>
+    <string name="menu_gallery">Gestion de compte</string>
+    <string name="menu_slideshow">Dépannage milego</string>
+    <string name="menu_share">Partager</string>
+    <string name="menu_send">Envoyer</string>
+</resources>

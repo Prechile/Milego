@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+    <EditText
+            android:id="@+id/dialogNumeroEt"
+            android:hint="Numéro de carte canal+"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    <EditText
+            android:id="@+id/dialogMontantEt"
+            android:hint="Montant"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+        <Button
+                android:id="@+id/EnvoyerCanal"
+                android:text="Envoyer"
+                android:background="#7AB900"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="#FFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <Button
+                android:id="@+id/annulerCanal"
+                android:text="Annuler"
+                android:background="#FF4848"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="#FFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

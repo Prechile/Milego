@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".simulation">
+
+    <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/sin"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+            <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:columnOrderPreserved="true">
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/lin"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Simuler vos achat comme si vous étiez au marché ou à0 la boutique"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:text="Sélectionner vos produits de préférence, la quantité ou le nombre ainsi que le mesure que vous souhaité afin de vous générer un prix de tous vos achats avant de vous y rendre dans une boutique ou au marché..."
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.gridlayout.widget.GridLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/sin"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Simulation de denrée alimentaire"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorPrimary"
+                        android:layout_marginTop="20dp"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20sp"
+                        android:textColorHint="@color/colorPrimary">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="25dp"
+                                    android:text="Produits"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/produit"
+                                android:layout_width="150dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="6dp"
+                                android:background="@drawable/input_bg"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:spinnerMode="dialog"
+                                android:textColor="@color/colorPrimary"
+                                android:textColorHint="@color/colorPrimaryDark"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="25dp"
+                                    android:text="Quantité"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+
+                            <Spinner
+                                    android:id="@+id/qte"
+                                    android:layout_width="60dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="6dp"
+                                    android:background="@drawable/input_bg"
+                                    android:paddingLeft="15dp"
+                                    android:paddingRight="15dp"
+                                    android:spinnerMode="dialog"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimaryDark"
+                                    android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="25dp"
+                                    android:text="Type"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+
+                            <Spinner
+                                    android:id="@+id/type"
+                                    android:layout_width="100dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="6dp"
+                                    android:background="@drawable/input_bg"
+                                    android:paddingLeft="15dp"
+                                    android:paddingRight="15dp"
+                                    android:spinnerMode="dialog"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimaryDark"
+                                    android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="25dp"
+                                    android:text=""
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+
+                            <Button
+                                    android:id="@+id/valider"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10sp"
+                                    android:background="@drawable/btn_con"
+                                    android:text="Ajouter"
+                                    android:textColor="@color/colorWhite"
+                                    android:textStyle="bold" />
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:columnOrderPreserved="true">
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="13dp"
+                        app:cardElevation="10dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Panier"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="80dp"
+                                android:layout_gravity="center"
+                            android:orientation="horizontal">
+                            <Button
+                                    android:id="@+id/all1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/btn_con"
+                                    android:text="Total prix"
+                                    android:textColor="@color/colorWhite" />
+
+                            <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text=" 0.000Fcfa"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+                    <Button
+                            android:id="@+id/reset"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="top|right"
+                            android:background="#E81123"
+                            android:text="X"
+                            android:textColor="@color/colorWhite" />
+                </androidx.cardview.widget.CardView>
+            </androidx.gridlayout.widget.GridLayout>
+
+
+            //SIMULATION DE BOUTIQUE
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/sin"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Simulation des produits de boutique"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"
+                        android:layout_marginTop="20dp"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20sp"
+                    android:textColorHint="@color/colorPrimary">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="25dp"
+                                android:text="Produits"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                        <Spinner
+                                android:id="@+id/produitBoutique"
+                                android:layout_width="150dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="6dp"
+                                android:background="@drawable/input_bg"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:spinnerMode="dialog"
+                                android:textColor="@color/colorPrimary"
+                                android:textColorHint="@color/colorPrimaryDark"
+                                android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="25dp"
+                                android:text="Quantité"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                        <Spinner
+                                android:id="@+id/qteB"
+                                android:layout_width="60dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="6dp"
+                                android:background="@drawable/input_bg"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:spinnerMode="dialog"
+                                android:textColor="@color/colorPrimary"
+                                android:textColorHint="@color/colorPrimaryDark"
+                                android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="25dp"
+                                android:text="Type"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                        <Spinner
+                                android:id="@+id/typeB"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="6dp"
+                                android:background="@drawable/input_bg"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:spinnerMode="dialog"
+                                android:textColor="@color/colorPrimary"
+                                android:textColorHint="@color/colorPrimaryDark"
+                                android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="25dp"
+                                android:text=""
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                        <Button
+                                android:id="@+id/validerB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10sp"
+                                android:background="@drawable/btn_con"
+                                android:text="Ajouter"
+                                android:textColor="@color/colorWhite"
+                                android:textStyle="bold" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:columnOrderPreserved="true">
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="13dp"
+                        app:cardElevation="10dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Panier"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="80dp"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+                            <Button
+                                    android:id="@+id/allB"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/btn_con"
+                                    android:text="Total prix"
+                                    android:textColor="@color/colorWhite" />
+
+                            <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text=" 0.000Fcfa"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <Button
+                    android:id="@+id/reset1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="top|right"
+                    android:background="#E81123"
+                    android:text="X"
+                    android:textColor="@color/colorWhite" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.gridlayout.widget.GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

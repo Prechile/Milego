@@ -1,0 +1,2197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Boutique">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scrollbars="vertical">
+    >
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+    <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:foregroundGravity="center|top"
+            android:gravity="center|top"
+            android:text="BOUTIQUE MILEGO"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:foregroundGravity="center|top"
+            android:gravity="center|top"
+            android:text="Faites vos achats à crédit "
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    <TextView
+            android:id="@+id/txt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text2" />
+
+    <TextView
+            android:id="@+id/txt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt3"
+            android:background="@color/colorGreen"
+            android:text="  Produits de première néccéssité"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/txt4"
+                android:layout_height="match_parent"
+                android:id="@+id/linV"
+                android:orientation="vertical">
+
+            <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linV"
+                    android:layout_marginTop="10dp">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        app:cardElevation="6dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="1dp">
+
+                        <CheckBox
+                                android:id="@+id/checkBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"/>
+
+                        <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="4"
+                                android:src="@drawable/prd_riz" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Riz parfumé"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="5500 Fcfa"
+                                android:textColor="@color/colorGreen"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        app:cardElevation="6dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="1dp">
+                        <CheckBox
+                                android:id="@+id/checkBox1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"/>
+
+
+                        <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="4"
+                                android:src="@drawable/prd_mais" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Mais"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="35.000 Fcfa"
+                                android:textColor="@color/colorGreen"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        app:cardElevation="6dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="1dp">
+                        <CheckBox
+                                android:id="@+id/checkBox2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"/>
+
+
+                        <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="4"
+                                android:src="@drawable/prd_ble" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Farinde de blé"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="15.000 Fcfa"
+                                android:textColor="@color/colorGreen"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        app:cardElevation="6dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="1dp">
+
+                        <CheckBox
+                                android:id="@+id/checkBox4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"/>
+
+
+                        <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="4"
+                                android:src="@drawable/prd_soja" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Soja"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="10.000 Fcfa"
+                                android:textColor="@color/colorGreen"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:id="@+id/card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        app:cardElevation="6dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="1dp">
+                        <CheckBox
+                                android:id="@+id/checkBo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"/>
+
+                        <ImageView
+                                android:id="@+id/bounce"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="4"
+                                android:src="@drawable/prd_riz2" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Riz simple"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="10.000 Fcfa"
+                                android:textColor="@color/colorGreen"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        app:cardElevation="6dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="1dp">
+
+                        <CheckBox
+                                android:id="@+id/checkBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"/>
+
+                        <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="4"
+                                android:src="@drawable/prd_huile" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Huile 1 lire"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="1.000 Fcfa"
+                                android:textColor="@color/colorGreen"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        app:cardElevation="6dp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="1dp">
+
+                        <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="4"
+                                android:src="@drawable/prd_huile1" />
+                        <CheckBox
+                                android:id="@+id/checkBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="huile 5l, 25l"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="5.000 Fcfa"
+                                android:textColor="@color/colorGreen"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+    </HorizontalScrollView>
+
+            <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linV"
+                    android:layout_marginTop="10dp">
+
+                <LinearLayout
+                        android:id="@+id/lin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+                            <CheckBox
+                                    android:id="@+id/checkBox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"/>
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_riz" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Riz parfumé"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="5500 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+                            <CheckBox
+                                    android:id="@+id/checkBox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"/>
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_mais" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Mais"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="35.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+                            <CheckBox
+                                    android:id="@+id/checkBox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"/>
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_ble" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Farinde de blé"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="15.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+                            <CheckBox
+                                    android:id="@+id/checkBox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"/>
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_soja" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Soja"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="10.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+                            <CheckBox
+                                    android:id="@+id/checkBox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"/>
+
+                            <ImageView
+                                    android:id="@+id/bounce"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_riz2" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Riz simple"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="10.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+                            <CheckBox
+                                    android:id="@+id/checkBox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"/>
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_huile" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Huile 1 lire"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="1.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+                            <CheckBox
+                                    android:id="@+id/checkBox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"/>
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_huile1" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="huile 5l, 25l"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="5.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+
+            </HorizontalScrollView>
+            <TextView
+                    android:id="@+id/txt5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text2" />
+
+            <TextView
+                    android:id="@+id/txt6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt5"
+                    android:background="@color/colorPrimary"
+                    android:text="  Produits de seconde néccéssité"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+                            <CheckBox
+                                    android:id="@+id/checkBox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"/>
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_riz" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Riz parfumé"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="5500 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+                            <CheckBox
+                                    android:id="@+id/checkBox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"/>
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_mais" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Mais"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="35.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+                            <CheckBox
+                                    android:id="@+id/checkBox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"/>
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_ble" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Farinde de blé"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="15.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+                            <CheckBox
+                                    android:id="@+id/checkBox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"/>
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_soja" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Soja"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="10.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+                            <CheckBox
+                                    android:id="@+id/checkBox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"/>
+
+                            <ImageView
+                                    android:id="@+id/bounce"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_riz2" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Riz simple"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="10.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+                            <CheckBox
+                                    android:id="@+id/checkBox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"/>
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_huile" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Huile 1 lire"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="1.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_huile1" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="huile 5l, 25l"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="5.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linV"
+                    android:layout_marginTop="10dp">
+
+                <LinearLayout
+                        android:id="@+id/lin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_riz" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Riz parfumé"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="5500 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_mais" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Mais"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="35.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_ble" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Farinde de blé"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="15.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_soja" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Soja"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="10.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:id="@+id/bounce"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_riz2" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Riz simple"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="10.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_huile" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Huile 1 lire"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="1.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_huile1" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="huile 5l, 25l"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="5.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+
+            </HorizontalScrollView>
+
+            <TextView
+                    android:id="@+id/txt7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text2" />
+
+            <TextView
+                    android:id="@+id/txt8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt7"
+                    android:background="#DC4900"
+                    android:text="  Autres produits"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_riz" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Riz parfumé"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="5500 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_mais" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Mais"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="35.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_ble" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Farinde de blé"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="15.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_soja" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Soja"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="10.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:id="@+id/bounce"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_riz2" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Riz simple"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="10.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_huile" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Huile 1 lire"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="1.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_huile1" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="huile 5l, 25l"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="5.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linV"
+                    android:layout_marginTop="10dp">
+
+                <LinearLayout
+                        android:id="@+id/lin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_riz" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Riz parfumé"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="5500 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_mais" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Mais"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="35.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_ble" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Farinde de blé"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="15.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_soja" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Soja"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="10.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:id="@+id/bounce"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_riz2" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Riz simple"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="10.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_huile" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="Huile 1 lire"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="1.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:cardElevation="6dp"
+                            app:layout_columnWeight="1"
+                            app:layout_rowWeight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                            <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/prd_huile1" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="huile 5l, 25l"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="5.000 Fcfa"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
